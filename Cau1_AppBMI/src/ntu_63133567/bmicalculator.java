@@ -21,6 +21,7 @@ public class bmicalculator extends JFrame {
 	private JTextField textField;
 	private JTextField textField_1;
 	private JTextField textField_2;
+	private JTextField textField_3;
 
 	/**
 	 * Launch the application.
@@ -126,7 +127,7 @@ public class bmicalculator extends JFrame {
 				textField_2.setText("");
 				textField_2.setOpaque(true);
 				textField_2.setBackground(null);
-				
+				textField_3.setText("");
 			}
 		});
 		btnNewButton_1.setBounds(196, 164, 85, 21);
@@ -141,10 +142,13 @@ public class bmicalculator extends JFrame {
 		btnNewButton_2.setBounds(310, 164, 85, 21);
 		panel_1.add(btnNewButton_2);
 		
-		JLabel lblNewLabel_2 = new JLabel("");
-		lblNewLabel_2.setFont(new Font("Tahoma", Font.BOLD, 16));
-		lblNewLabel_2.setBounds(382, 119, 147, 30);
-		panel_1.add(lblNewLabel_2);
+		textField_3 = new JTextField();
+		textField_3.setBackground(new Color(0, 128, 64));
+		textField_3.setEnabled(false);
+		textField_3.setFont(new Font("Tahoma", Font.BOLD, 16));
+		textField_3.setBounds(379, 119, 145, 30);
+		panel_1.add(textField_3);
+		textField_3.setColumns(10);
 		
 		JLabel lblImg = new JLabel("");
 		lblImg.setIcon(new ImageIcon(bmicalculator.class.getResource("/images/img1.jpg")));
