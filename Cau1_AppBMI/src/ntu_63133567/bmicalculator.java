@@ -141,6 +141,7 @@ public class bmicalculator extends JFrame {
 		panel_1.add(btnNewButton_2);
 		
 		JLabel lblNewLabel_2 = new JLabel("");
+		lblNewLabel_2.setFont(new Font("Tahoma", Font.BOLD, 16));
 		lblNewLabel_2.setBounds(382, 119, 147, 30);
 		panel_1.add(lblNewLabel_2);
 		
