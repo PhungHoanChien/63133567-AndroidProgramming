@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         btnCF.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int C
+                int C = Integer.parseInt(edtC.getText().toString());
             }
         });
     }
