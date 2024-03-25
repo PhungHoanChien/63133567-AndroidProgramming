@@ -44,5 +44,12 @@ public class MainActivity extends AppCompatActivity {
                 edtF.setText(F+"");
             }
         });
+        btnFC.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int F = Integer.parseInt(edtF.getText().toString());
+                
+            }
+        });
     }
 }
