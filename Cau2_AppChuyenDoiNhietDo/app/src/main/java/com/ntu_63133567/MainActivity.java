@@ -12,6 +12,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import java.text.DecimalFormat;
+
 public class MainActivity extends AppCompatActivity {
 
     EditText edtF, edtC;
@@ -39,14 +41,16 @@ public class MainActivity extends AppCompatActivity {
         btnCF.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                DecimalFormat dcf = new DecimalFormat("0.00");
                 int C = Integer.parseInt(edtC.getText().toString());
                 Double F = C*1.8 +32;
-                edtF.setText(F+"");
+                edtF.setText(dcf.format(F)+"");
             }
         });
         btnFC.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                DecimalFormat dcf = new DecimalFormat("0.00");
                 int F = Integer.parseInt(edtF.getText().toString());
                 Double C = (F-32)/1.8;
                 edtC.setText(C+"");
