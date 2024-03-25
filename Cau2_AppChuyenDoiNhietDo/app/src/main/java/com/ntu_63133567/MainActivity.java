@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
                 DecimalFormat dcf = new DecimalFormat("0.00");
                 int F = Integer.parseInt(edtF.getText().toString());
                 Double C = (F-32)/1.8;
-                edtC.setText(C+"");
+                edtC.setText(dcf.format(C)+"");
             }
         });
         btnclear.setOnClickListener(new View.OnClickListener() {
