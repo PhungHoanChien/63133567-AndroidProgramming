@@ -2,6 +2,7 @@ package com.ntu_63133567;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -35,6 +36,11 @@ public class MainActivity extends AppCompatActivity {
         btnFC = findViewById(R.id.btnFC);
         btnclear = findViewById(R.id.btnclear);
 
-        btnCF
+        btnCF.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int C
+            }
+        });
     }
 }
