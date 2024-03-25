@@ -115,6 +115,9 @@ public class bmicalculator extends JFrame {
 					textField_2.setBackground(Color.BLUE);
 					textField_3.setText("UnderWeight");
 				}
+				else if(bmi <= 24.5) {
+					
+				}
 			}
 		});
 		btnNewButton.setBounds(85, 164, 85, 21);
