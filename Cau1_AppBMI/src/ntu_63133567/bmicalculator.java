@@ -110,7 +110,7 @@ public class bmicalculator extends JFrame {
 				textField_2.setText(cal);
 				
 				if(bmi <= 18.5) {
-					
+					textField_2.setOpaque(true);
 				}
 			}
 		});
