@@ -113,10 +113,14 @@ public class bmicalculator extends JFrame {
 				if(bmi <= 18.5) {
 					textField_2.setOpaque(true);
 					textField_2.setBackground(Color.BLUE);
+					textField_3.setForeground(Color.BLUE);
 					textField_3.setText("UnderWeight");
 				}
 				else if(bmi <= 24.5) {
-					
+					textField_2.setOpaque(true);
+					textField_2.setBackground(Color.GREEN);
+					textField_3.setForeground(Color.GREEN);
+					textField_3.setText("Normal Weight");
 				}
 			}
 		});
