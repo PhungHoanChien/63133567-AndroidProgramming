@@ -140,6 +140,10 @@ public class bmicalculator extends JFrame {
 		btnNewButton_2.setBounds(310, 164, 85, 21);
 		panel_1.add(btnNewButton_2);
 		
+		JLabel lblNewLabel_2 = new JLabel("");
+		lblNewLabel_2.setBounds(382, 119, 147, 30);
+		panel_1.add(lblNewLabel_2);
+		
 		JLabel lblImg = new JLabel("");
 		lblImg.setIcon(new ImageIcon(bmicalculator.class.getResource("/images/img1.jpg")));
 		lblImg.setIcon(new ImageIcon(new javax.swing.ImageIcon(getClass().getResource("/images/img1.jpg")).getImage().getScaledInstance(570, 185, java.awt.Image.SCALE_SMOOTH)));
