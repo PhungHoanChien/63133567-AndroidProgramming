@@ -126,6 +126,7 @@ public class bmicalculator extends JFrame {
 				textField_2.setText("");
 				textField_2.setOpaque(true);
 				textField_2.setBackground(null);
+				
 			}
 		});
 		btnNewButton_1.setBounds(196, 164, 85, 21);
