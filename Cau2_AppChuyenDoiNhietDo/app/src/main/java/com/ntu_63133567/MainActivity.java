@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 int C = Integer.parseInt(edtC.getText().toString());
+                Double F = C*1.8 +32;
             }
         });
     }
