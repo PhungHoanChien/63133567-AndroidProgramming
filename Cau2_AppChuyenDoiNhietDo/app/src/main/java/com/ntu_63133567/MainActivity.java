@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 int F = Integer.parseInt(edtF.getText().toString());
-                Double c = (F-32)/1.8;
+                Double C = (F-32)/1.8;
                 edtC.setText(C+"");
             }
         });
