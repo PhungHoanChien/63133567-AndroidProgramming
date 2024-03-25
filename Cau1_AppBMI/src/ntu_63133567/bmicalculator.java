@@ -128,11 +128,11 @@ public class bmicalculator extends JFrame {
 					textField_3.setForeground(Color.ORANGE);
 					textField_3.setText("OverWeight");
 				}
-				else if(bmi <= 24.5) {
+				else if(bmi >= 30) {
 					textField_2.setOpaque(true);
-					textField_2.setBackground(Color.GREEN);
-					textField_3.setForeground(Color.GREEN);
-					textField_3.setText("Normal Weight");
+					textField_2.setBackground(Color.RED);
+					textField_3.setForeground(Color.RED);
+					textField_3.setText("Obeae ");
 				}
 			}
 		});
