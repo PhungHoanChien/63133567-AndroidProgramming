@@ -18,7 +18,7 @@ public class bmicalculator extends JFrame {
 
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
-	private JTextField text1;
+	private JTextField textField;
 	private JTextField textField_1;
 	private JTextField textField_2;
 
@@ -82,10 +82,10 @@ public class bmicalculator extends JFrame {
 		lblNewLabel_1_2.setBounds(10, 125, 96, 23);
 		panel_1.add(lblNewLabel_1_2);
 		
-		text1 = new JTextField();
-		text1.setBounds(140, 25, 210, 30);
-		panel_1.add(text1);
-		text1.setColumns(10);
+		textField = new JTextField();
+		textField.setBounds(140, 25, 210, 30);
+		panel_1.add(textField);
+		textField.setColumns(10);
 		
 		textField_1 = new JTextField();
 		textField_1.setColumns(10);
@@ -98,13 +98,33 @@ public class bmicalculator extends JFrame {
 		panel_1.add(textField_2);
 		
 		JButton btnNewButton = new JButton("Calculator");
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				double h = Double.parseDouble(textField.getText());
+				double w = Double.parseDouble(textField_1.getText());
+				
+				double bmi = w / (h*h);
+				
+				String cal = String.format("%.2f",bmi);
+				
+				textField_2.setText(cal);
+				
+				if(bmi <= 18.5) {
+					
+				}
+			}
+		});
 		btnNewButton.setBounds(85, 164, 85, 21);
 		panel_1.add(btnNewButton);
 		
 		JButton btnNewButton_1 = new JButton("Clear");
 		btnNewButton_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				
+				textField.setText("");
+				textField_1.setText("");
+				textField_2.setText("");
+				textField_2.setOpaque(true);
+				textField_2.setBackground(null);
 			}
 		});
 		btnNewButton_1.setBounds(196, 164, 85, 21);
