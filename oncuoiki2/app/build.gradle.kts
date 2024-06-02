@@ -1,13 +1,13 @@
 plugins {
-    alias(libs.plugins.androidApplication)
+    alias(libs.plugins.android.application)
 }
 
 android {
-    namespace = "com.example.viewpager2recyclerviewadapter"
+    namespace = "com.example.oncuoiki"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.viewpager2recyclerviewadapter"
+        applicationId = "com.example.oncuoiki"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
