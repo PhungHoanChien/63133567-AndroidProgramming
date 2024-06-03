@@ -40,7 +40,10 @@ public class MainActivity extends AppCompatActivity {
                         selectedFragment = new ProfileFragment();
                     } else if (id == R.id.navigation_question4) {
                         selectedFragment = new Question4Fragment();
+                    }else if (id == R.id.navigation_question3) {
+                        selectedFragment = new Question3Fragment();
                     }
+
 
                     getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                             selectedFragment).commit();
